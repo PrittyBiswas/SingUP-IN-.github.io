@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body,
+input {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: black;
+    user-select: none;
+}
+
+ul {
+    padding-top: 90px;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    font-size: 16px;
+    color: white;
+    padding-left: 35px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+ul li :hover a {
+    padding-left: 40px;
+}
+
+.sidebar ul a i {
+    margin-right: 2px;
+    margin-left: -20px;
+    word-spacing: 14px;
+    font-size: 15px;
+    color: white;
+}
+
+span {
+    padding: 0px 9px;
+    margin-left: 0px;
+}
+
+#check {
+    display: none;
+}
+
+label#btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border-radius: 5px;
+
+}
+
+label #btn {
+    margin: 7px 25px;
+    border-radius: 10px;
+    font-size: 27px;
+    color: white;
+    background: black;
+    padding: 6px 12px;
+    transition: all .4s;
+}
+
+
+label #cancel {
+    z-index: 111;
+    left: -150px;
+    top: 20px;
+    font-size: 15px;
+    color: white;
+    background: black;
+    padding: 11px 18px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0px;
+}
+
+#check:checked~label #btn {
+    margin-left: 230px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+
+    margin-left: 380px;
+}
+
+#check:checked~section {
+    margin-left: 200px;
+}
+
+section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s ease;
+}
+
+
+/*section*/
+
+section#from2 {
+    justify-content: space-between;
+    background: aqua;
+    text-align: -webkit-right;
+    padding: 53px 103px;
+    height: 800px;
+}
+
+.top {
+    top: 0;
+}
+
+.middle {
+    top: 10px;
+}
+
+.bottom {
+    top: 20px;
+}
+
+h1.textks {
+    margin-right: 478px;
+    margin-bottom: 0;
+    color: #0f68b5;
+    font-weight: bolder;
+    border-bottom: 3px solid;
+}
+
+
+.loginfrom {
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logbtn {
+    border-radius: 25px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-top: 22px;
+    width: 125px;
+    height: 45px;
+    color: white;
+    font-size: unset;
+    font-weight: bold;
+}
+
+.frominformation {
+    /* text-align: center; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* align-items: center; */
+}
+
+input#inputstyle {
+    background: #e5e8eb;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+input#inputstyle {
+    background: rgb(229, 232, 235);
+    border: #e5e8eb;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+}
+
+.fromsection {
+
+    background: #e5e8eb;
+    width: 350px;
+    height: 57px;
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 21px;
+    color: #0000009c;
+}
+
+.myfrom {
+    text-align: -webkit-center;
+}
+
+.card {
+    /* width: 25rem; */
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    box-shadow: 0px 10px 40px -10px;
+    /* margin: 50px 80px; */
+    justify-content: space-between;
+}
+
+div#caer2 {
+    right: 95px;
+}
+
+i.fas.fa-user {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+i.fas.fa-lock {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+i.fa-solid.fa-envelope {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+i.fa-solid.fa-phone-flip {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+i.fa-solid.fa-info {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+
+/* CopyRight */
+
+div#coppyright {
+    background: black;
+    color: aqua;
+    padding: 15px 489px;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 992px) {
+
+    div#caer2 {
+        position: absolute;
+        top: 420px;
+        margin: 62px -60px;
+        width: 22rem;
+    }
+
+    .card {
+        width: 18rem;
+        margin: 25px -67px;
+    }
+
+    .frominformation {
+        margin-top: 15px;
+        margin-bottom: 19px;
+    }
+
+    .fromsection {
+        width: 270px;
+        height: 47px;
+        padding: 7px;
+        font-size: 1px;
+    }
+
+    input#inputstyle {
+        background: rgb(229, 232, 235);
+        border: #e5e8eb;
+        border-radius: 25px;
+        font-size: 13px;
+        font-weight: bold;
+        outline: none;
+    }
+
+    section#from2 {
+        height: 1000px;
+    }
+
+    div#coppyright {
+        background: black;
+        color: aqua;
+        padding: 9px 70px;
+        font-size: 10px;
+    }
+
+}
